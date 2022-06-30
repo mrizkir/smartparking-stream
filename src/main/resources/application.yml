@@ -1,0 +1,11 @@
+name: smartparkingstream
+spring:
+  main:
+    web-application-type: none
+carparking:
+  api-url-v1: https://carparking.sttindonesia.ac.id/api/v1
+kafka:
+  bootstrap=servers: cluster.yacanet.com:9092
+  consumer:
+    group-id: smartparkingstream
+    auto-offset-reset: latest
